@@ -4,11 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DoughnutChartComponent } from 'angular-d3-charts';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    DoughnutChartComponent
+    DoughnutChartComponent  
   ],
   imports: [
     BrowserModule
