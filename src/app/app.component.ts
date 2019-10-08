@@ -10,48 +10,33 @@ export class AppComponent {
 
   public donutCharts = [[{
     id: 0,
-    label: 'water',
+    label: 'Tablet',
     value: 20,
-    color: 'red',
-  }, {
-    id: 1,
-    label: 'land',
-    value: 20,
-    color: 'blue',
+    color: '0C6F20',
   }, {
     id: 2,
-    label: 'sand',
+    label: 'Smartphone',
     value: 30,
-    color: 'green',
+    color: '24DD4A'
   }], [{
     id: 0,
-    label: 'water',
+    label: 'Tablet',
     value: 20,
-    color: 'red',
-  }, {
-    id: 1,
-    label: 'land',
-    value: 20,
-    color: 'blue',
+    color: '134F80',
   }, {
     id: 2,
-    label: 'sand',
+    label: 'Smartphone',
     value: 30,
-    color: 'green',
+    color: '3AA3F9',
   }], [{
     id: 0,
-    label: 'water',
+    label: 'Tablet',
     value: 20,
-    color: 'red',
-  }, {
-    id: 1,
-    label: 'land',
-    value: 20,
-    color: 'blue',
+    color: 'E99C25',
   }, {
     id: 2,
-    label: 'sand',
+    label: 'Smartphone',
     value: 30,
-    color: 'green',
+    color: 'F4DE54',
   }]];
 }

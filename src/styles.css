@@ -21,4 +21,6 @@
 .legend {
   font-size: 12px;
   font-family: sans-serif;
+  position: absolute;
+  display: none;
 }

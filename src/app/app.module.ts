@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { DoughnutChartComponent } from 'angular-d3-charts'; // this is needed!
+import { DoughnutChartComponent } from 'angular-d3-charts';
 
 
 @NgModule({
@@ -12,10 +11,11 @@ import { DoughnutChartComponent } from 'angular-d3-charts'; // this is needed!
     DoughnutChartComponent
   ],
   imports: [
-    BrowserModule,
-    FlexLayoutModule
+    BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
