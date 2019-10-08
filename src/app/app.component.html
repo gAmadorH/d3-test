@@ -1,9 +1,24 @@
-<div *ngFor="let donutChart of donutCharts">
-  <angular-d3-donut
-  [data]="donutChart"
-  [outerRadius]=150
-  [innerRadius]=140
-  [width]=500
-  >
-  </angular-d3-donut>
+<div class="items-controls-container" fxFlex="0 0 auto" fxLayout="row wrap" fxLayoutAlign="space-around">
+    <h3 fxFlex="1 1 100%" fxLayoutAlign="center">{{ title }}</h3>
+
+    <div fxFlex="1 1 100%">
+  
+      <ng-container *ngFor="let chart of chartsData">
+
+        <div class="items-number-control" fxFlex="auto" fxLayout="row wrap" fxLayoutAlign="space-around">
+          <div class="items-number" fxFlex="auto" fxLayout="row" fxLayoutAlign="center">
+              <ng-container *ngTemplateOutlet="chartTemplate;context:{chart: chart}"></ng-container>
+          </div>
+        </div>
+  
+      </ng-container>
+      
+    </div> 
 </div>
+
+
+<ng-template #chartTemplate let-chart="chart">
+    <angular-d3-donut [data]="chart.data" [outerRadius]=150 [innerRadius]=140 [middleText]="chart.middleText" [middleTextFontSize]="'1.5em'" [width]="550"></angular-d3-donut>
+</ng-template>
+
+
